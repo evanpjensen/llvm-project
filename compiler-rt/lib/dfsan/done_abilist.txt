@@ -1,6 +1,19 @@
 fun:main=uninstrumented
 fun:main=discard
 
+
+###############################################################################
+# EVAN
+###############################################################################
+fun:copy_file_range=uninstrumented
+fun:copy_file_range=discard
+fun:__unw_getcontext=uninstrumented
+fun:__unw_getcontext=discard
+fun:__libunwind_Registers_x86_64_jumpto=uninstrumented
+fun:__libunwind_Registers_x86_64_jumpto=discard
+
+
+
 ###############################################################################
 # DFSan interface functions
 ###############################################################################
